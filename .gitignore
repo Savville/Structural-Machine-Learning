@@ -1,0 +1,268 @@
+# ==============================================================================
+# STEEL STRUCTURAL OPTIMIZATION PROJECT - .gitignore
+# ==============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# ==============================================================================
+# STRUCTURAL ANALYSIS & SIMULATION FILES
+# ==============================================================================
+
+# OpenSees Output Files
+*.out
+*.log
+recorder*
+*.ops
+*.tcl
+
+# Analysis Results
+*.dat
+*.res
+*.rpt
+*.txt
+
+# Temporary Analysis Files
+temp_*
+tmp_*
+*.tmp
+
+# ==============================================================================
+# MACHINE LEARNING & DATA FILES
+# ==============================================================================
+
+# Large Dataset Files (keep small samples only)
+optimization_training_dataset.csv
+optimization_training_dataset_corrected.csv
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Model Files
+surrogate_models.pkl
+pareto_optimal_solutions.json
+dataset_metadata.json
+
+# Training Logs
+logs/
+tensorboard_logs/
+*.log
+
+# Large Data Files
+*.csv
+!sample_*.csv  # Keep sample datasets
+*.xlsx
+*.json
+!config*.json  # Keep configuration files
+
+# ==============================================================================
+# VISUALIZATION & PLOTS
+# ==============================================================================
+
+# Generated Plots
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+*.eps
+
+# Animation Files
+*.gif
+*.mp4
+*.avi
+
+# ==============================================================================
+# DOCUMENTATION & REPORTS
+# ==============================================================================
+
+# LaTeX Files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Office Files
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+
+# ==============================================================================
+# SYSTEM & ENVIRONMENT FILES
+# ==============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# SENSITIVE & CONFIGURATION FILES
+# ==============================================================================
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API Keys & Secrets
+secrets.json
+api_keys.txt
+credentials.json
+*.key
+*.pem
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration Files (project-specific)
+config_local.py
+settings_local.py
+local_settings.py
+
+# ==============================================================================
+# PROJECT-SPECIFIC FILES
+# ==============================================================================
+
+# OpenSees Installation (if included)
+OpenSees*/
+opensees*/
+
+# Large Result Files
+optimization_results/
+analysis_outputs/
+performance_data/
+
+# Backup Files
+backup/
+backups/
+*.backup
+*.bak
+
+# Testing Files
+test_results/
+coverage/
+.coverage
+.pytest_cache/
+.tox/
+
+# Profiling Files
+*.prof
+*.profile
+
+# ==============================================================================
+# EXCEPTIONS - Files to ALWAYS INCLUDE
+# ==============================================================================
+
+# Keep these important files
+!README.md
+!requirements.txt
+!setup.py
+!pyproject.toml
+!sample_data.csv
+!config_template.json
+!user_guide.md
+!installation_guide.md
+
+# Keep small example files
+!examples/*.py
+!examples/sample_*.csv
+!examples/demo_*.json
+
+# Keep documentation
+!docs/
+!*.md
+
+# Keep configuration templates
+!*_template.*
+!example_*.*
